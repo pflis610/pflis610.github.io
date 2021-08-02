@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+#kontener {
+    position: relative;
+    background-color: black;
+    width: 400px;
+    height: 130px;
+}
+.box {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.boxlove {
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    transform: translateY(25%);
+    left: 20px;
+    visibility: hidden;
+}
+@keyframes znikanie {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+#licz10 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+#licz9 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+#licz8 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+#licz7 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+}
+#licz6 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+}
+#licz5 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+}
+#licz4 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+}
+#licz3 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
+}
+#licz2 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-timing-function: ease-in-out;
+}
+#licz1 {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 9s;
+    animation-timing-function: ease-in-out;
+}
+#love {
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    animation-timing-function: ease-in-out;
+}
