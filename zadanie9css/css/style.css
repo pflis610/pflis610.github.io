@@ -27,7 +27,7 @@ section {
     font-weight: 400;
 }
 
-#header {
+.header {
     background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@ section {
     align-items: center;
     justify-content: center;
 }
-#main-header {
+.main-header {
     text-align: center;
 }
 h1 {
@@ -46,12 +46,12 @@ h1 {
     text-transform: uppercase;
     margin: 0;
 }
-#main-header p {
+.main-header p {
     color: #333;
     font-size: 1.3em;
     margin: 40px 0;
 }
-#main-header p span {
+.main-header p span {
     color: #007bff;
 }
 .button {
@@ -73,6 +73,12 @@ h1 {
 
 .navi {
     background-color: #007bff;
+}
+#drop-nav {
+    display: none;
+}
+label[for="drop-nav"] {
+    display: none;
 }
 .navi ul {
     margin: 0;
@@ -97,19 +103,19 @@ h1 {
 }
 
 
-#about {
+.about {
     text-align: center;
 }
-#img-about {
+.img-about {
     border-radius: 50%;
 }
-#about p {
+.about p {
     max-width: 700px;
     margin: 40px auto 30px auto;
     color: #777;
     line-height: 1.4;
 }
-#portfolio {
+.portfolio {
     background-color: #f2f1ed;
 }
 .gallery {
@@ -165,5 +171,79 @@ h1 {
     margin-bottom: 15px;
     height: 100px;
 }
+.social {
+    margin-top: 75px;
+    text-align: center;
+}
+.social-link {
+    font-size: 2.5em;
+    color: #007bff;
+    transition: all .3s;
+    display: inline-block;
+    margin: 0 20px;
+}
+.social-link:hover {
+    color: #777;
+}
 
-1:10
+.footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .gallery-item {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .gallery-item {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3em;
+    }
+    .img-about {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .contact input[type="text"],
+    .contact input[type="email"] {
+        flex-basis: 100%;
+    }
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
+    ul {
+        display: none;
+    }
+    #drop-nav:checked + ul {
+        display: block;
+    }
+    .item_menu {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+}

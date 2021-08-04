@@ -7,20 +7,23 @@
     <title>Moje portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header id="header">
-        <div id="main-header">
+    <header class="header">
+        <div class="main-header">
             <h1>Front End Developer</h1>
             <hr>
-            <p>HTML<span>*</span>CSS<span>*</span>JavaScript</p>
+            <p>HTML<span>•</span>CSS<span>•</span>JavaScript</p>
             <a href="" class="button">Dowiedz się więcej</a>
         </div>   
     </header>
 
     <nav class="navi">
+        <label for="drop-nav">Menu</label>
+        <input type="checkbox" id="drop-nav">
         <ul>
             <li class="item_menu"><a href="#about">O mnie</a></li>
             <li class="item_menu"><a href="#portfolio">Portfolio</a></li>
@@ -28,20 +31,20 @@
         </ul>
     </nav>
 
-    <section id="about">
+    <section class="about">
         <div class="container">
             <header class="section-header">
                 <h2>O mnie</h2>
                 <hr>
             </header>
-            <img src="img/about.jpg" alt="o mnie" id="img-about">
+            <img src="img/about.jpg" alt="o mnie" class="img-about">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio molestiae, possimus sunt voluptate officia nobis commodi assumenda, necessitatibus voluptatibus sint! Recusandae, at incidunt hic aliquam delectus maxime aspernatur optio!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eaque obcaecati labore aliquid voluptatibus quisquam iusto, ut quae sed aut cum quas molestiae voluptate, unde iure expedita voluptates, facilis nulla.</p>
             <a href="" class="button">Moje portfolio</a>
         </div>
         </section>
 
-    <section id="portfolio">
+    <section class="portfolio">
         <div class="container">
             <header class="section-header">
                 <h2>Portfolio</h2>
@@ -100,7 +103,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section class="contact">
         <div class="container">
             <header class="section-header">
                 <h2>Kontakt</h2>
@@ -112,12 +115,20 @@
                 <textarea placeholder="Wiadomość" name="message"></textarea>
                 <input type="submit" class="button"> 
             </form>
+            <div class="social">
+                <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </section>
 
 
-    <footer>
-        <p>Copyright C Akademia 108 - Szkoła Programowania</p>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © Akademia 108 - Szkoła Programowania</p>
+        </div>
     </footer>
 
 </body>
