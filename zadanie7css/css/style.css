@@ -3,12 +3,14 @@ header {
     color: white;
     text-align: center;
     font-size: xx-large;
+    text-transform: uppercase;
 }
 footer {
     background-color: indigo;
     color: white;
     text-align: center;
     font-size: xx-large;
+    text-transform: uppercase;
 }
 div {
     display: flex;
@@ -24,6 +26,7 @@ div {
     background-color: green;
     height: 100%;
     flex: 1 25%;
+    text-transform: uppercase;
 }
 #center {
     background-color: lightskyblue;
@@ -34,6 +37,7 @@ div {
     background-color: lightpink;
     height: 100%;
     flex: 1 25%;
+    text-transform: uppercase;
 }
 @media (min-width: 768px) and (max-width: 992px) {
     div {
