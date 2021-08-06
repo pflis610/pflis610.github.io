@@ -6,9 +6,6 @@
     background-color: black;
     width: 400px;
     height: 130px;
-    animation-name: znikanie;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
 }
 .box {
     position: absolute;
