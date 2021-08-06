@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
 }
-#kontener {
+.kontener {
     position: relative;
     background-color: black;
     width: 400px;
     height: 130px;
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 .box {
     position: absolute;
@@ -18,7 +21,7 @@
     visibility: hidden;
     animation-name: znikanie;
     animation-duration: 1s;
-    animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
 }
 .boxlove {
     position: absolute;
@@ -29,7 +32,11 @@
     transform: translateY(25%);
     left: 20px;
     visibility: hidden;
+    animation-name: znikanie;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
+
 @keyframes znikanie {
     0% {
         visibility: visible;
