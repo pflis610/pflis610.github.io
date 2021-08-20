@@ -34,7 +34,7 @@ const validate = (event) => {
         errors.appendChild(liError);
     }
 
-    if (errors.children.lenght > 0) {
+    if (errors.children.length > 0) {
         event.preventDefault();
     }
 
