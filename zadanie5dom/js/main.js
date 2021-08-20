@@ -36,9 +36,8 @@ const validate = (event) => {
 
     if (errors.children.lenght > 0) {
         event.preventDefault();
-
     }
-    event.preventDefault();
+
 
 }
 
@@ -51,7 +50,6 @@ const allAgree = (event) => {
 
     agree1.disabled = event.target.checked;
     agree2.disabled = event.target.checked;
-    // console.log(event.target.checked);
 }
 
 newsletterForm.addEventListener('submit', validate);

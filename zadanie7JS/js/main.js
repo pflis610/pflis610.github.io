@@ -35,11 +35,11 @@ console.log(tablica);
 const iloscPrzeczytanych = (tab) => {
   let numberTrue = 0;
   for (let i = 0; i < tab.length; i++) {
-    if (tab[i] == true) {
+    if (tab[i].przeczytana == true) {
       numberTrue++;
     }
     console.log(tab[i].opiszKsiazke());
   }
   return numberTrue;
 }
-console.log('Przeczytane ksiazki: ' + (iloscPrzeczytanych(tablica))); //zwraca 0
+console.log('Przeczytane ksiazki: ' + (iloscPrzeczytanych(tablica)));
