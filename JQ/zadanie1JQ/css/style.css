@@ -1,0 +1,17 @@
+.square {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+}
+
+h2 {
+    font-size: medium;
+    padding: 10px;
+}
+
+.backgroudColor {
+    background-color: blue;
+    transition: all 5s;
+}
