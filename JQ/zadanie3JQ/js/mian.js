@@ -1,46 +1,32 @@
-// $(document).ready(function () {
-
-//     $('#count-sum').click(function () {
-//         let total = 0;
-//         $('.salary').each(function () {
-//             total += $(this).val();
-
-//         });
-
-//         console.log(total);
-//     });
-
-// });
-
-
-
-// $(document).ready(function () {
-
-//     $('#count-sum').click(function () {
-//         let total = 0;
-//         $('.salary').each(function () {
-//             total += this.value;
-
-//         });
-
-//         console.log(total);
-//     });
-
-// });
-
-
-
-
 $(document).ready(function () {
 
     $('#count-sum').click(function () {
         let total = 0;
-        $('.salary').each(function (index, value) {
-            total += value;
-
+        $('.salary').each(function () {
+            total += Number(this.innerText);
+            
         });
+
+        $('#sum').text(total);
 
         console.log(total);
     });
 
 });
+
+
+// $(document).ready(function () {
+
+//     $('#count-sum').click(function () {
+//         let total = 0;
+//         $('.salary').each(function (index, element) {
+//             total += Number(element.innerText);
+            
+//         });
+
+//         $('#sum').text(total);
+
+//         console.log(total);
+//     });
+
+// });
