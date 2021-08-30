@@ -1,0 +1,22 @@
+button {
+    color: coral;
+    font-size: medium;
+    display: block;
+    padding: 10px;
+    background-color:#f8f9fa;
+}
+button:hover {
+    text-decoration: underline;
+    text-decoration-color: gray;
+    color: gray;
+    background-color: transparent;
+    
+}
+button:focus {
+    outline: 0;
+}
+
+
+hr {
+    max-width: 200px;
+}
