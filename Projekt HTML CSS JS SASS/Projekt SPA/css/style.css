@@ -625,6 +625,22 @@ section .section-header p {
   margin-bottom: 20px;
   padding: 10px;
 }
+.appointment form input::placeholder, .appointment form select::placeholder, .appointment form textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+.appointment form input:-moz-placeholder, .appointment form select:-moz-placeholder, .appointment form textarea:-moz-placeholder {
+  /* Firefox */
+  color: white;
+}
+.appointment form input:-ms-input-placeholder, .appointment form select:-ms-input-placeholder, .appointment form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+.appointment form input::-ms-input-placeholder, .appointment form select::-ms-input-placeholder, .appointment form textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
 .appointment form input.error, .appointment form select.error, .appointment form textarea.error {
   border-bottom: 1px solid #f00;
 }
@@ -636,7 +652,6 @@ section .section-header p {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .appointment form input, .appointment form select {
     width: 50%;
@@ -684,6 +699,22 @@ section .section-header p {
   display: inline-block;
   margin-bottom: 20px;
   padding: 20px;
+}
+.col-contact-form form input::placeholder, .col-contact-form form textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+.col-contact-form form input:-moz-placeholder, .col-contact-form form textarea:-moz-placeholder {
+  /* Firefox */
+  color: white;
+}
+.col-contact-form form input:-ms-input-placeholder, .col-contact-form form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+.col-contact-form form input::-ms-input-placeholder, .col-contact-form form textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 .col-contact-form form textarea {
   height: 180px;
