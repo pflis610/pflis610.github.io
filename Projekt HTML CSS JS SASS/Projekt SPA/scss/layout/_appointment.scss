@@ -5,12 +5,16 @@
         display: none;
         width: 40%;
         object-fit: fill;
+
+        img {
+            height: 100%;
+        }
     }
 
     form {
         background-color: $primary-color;
         width: 100%;
-        padding: 80px 40px;
+        padding: 80px 20px;
 
         .appointment-text {
             width: 100%;

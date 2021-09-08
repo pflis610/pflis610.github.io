@@ -594,10 +594,13 @@ section .section-header p {
   width: 40%;
   object-fit: fill;
 }
+.appointment .appointment-img img {
+  height: 100%;
+}
 .appointment form {
   background-color: #1ba4ce;
   width: 100%;
-  padding: 80px 40px;
+  padding: 80px 20px;
 }
 .appointment form .appointment-text {
   width: 100%;
