@@ -599,6 +599,18 @@ section .section-header p {
   width: 100%;
   padding: 80px 40px;
 }
+.appointment form .appointment-text {
+  width: 100%;
+  display: none;
+}
+.appointment form .appointment-text.error {
+  color: #f00;
+  display: block;
+}
+.appointment form .appointment-text.send {
+  color: #fff;
+  display: block;
+}
 .appointment form input, .appointment form select, .appointment form textarea {
   border: none;
   border-bottom: 1px solid #fff;

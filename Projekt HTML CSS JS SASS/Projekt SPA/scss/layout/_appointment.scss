@@ -12,6 +12,21 @@
         width: 100%;
         padding: 80px 40px;
 
+        .appointment-text {
+            width: 100%;
+            display: none;
+
+            &.error {
+                color: #f00;
+                display: block;
+            }
+
+            &.send {
+                color: #fff;
+                display: block;
+            }
+        }
+
         input, select, textarea {
             border: none;
             border-bottom: 1px solid #fff;
