@@ -8,7 +8,8 @@
 
     .contact-data {
         @include flexbox;
-        @include flex-align(center, center); 
+        @include flex-align(center, center);
+        text-align: start; 
         padding: 20px;
         font-weight: 300;
         text-transform: uppercase;
@@ -31,6 +32,8 @@
         background-color: $primary-color;
         width: 100%;
         padding: 60px 40px;
+        @include flexbox;
+        @include flex-align(flex-start, flex-start);
 
         input, textarea {
             border: 1px solid #fff;

@@ -596,6 +596,8 @@ section .section-header p {
 }
 .appointment .appointment-img img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .appointment form {
   background-color: #1ba4ce;
@@ -652,9 +654,10 @@ section .section-header p {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .appointment form input, .appointment form select {
-    width: 50%;
+    width: 48%;
   }
   .appointment .appointment-img {
     display: block;
@@ -673,6 +676,7 @@ section .section-header p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: start;
   padding: 20px;
   font-weight: 300;
   text-transform: uppercase;
@@ -689,6 +693,10 @@ section .section-header p {
   background-color: #1ba4ce;
   width: 100%;
   padding: 60px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .col-contact-form form input, .col-contact-form form textarea {
   border: 1px solid #fff;
@@ -743,7 +751,7 @@ footer .menu-item {
 }
 footer .menu-item a {
   color: #473452;
-  font-size: 700;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
