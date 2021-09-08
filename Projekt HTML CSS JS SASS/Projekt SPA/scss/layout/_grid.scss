@@ -1,0 +1,45 @@
+.row {
+    @include flexbox;
+}
+
+.col {
+    width: 100%;
+}
+
+.col-info {
+    width: 100%;
+}
+
+.col-contact-data {
+    width: 100%;
+    text-align: center;
+}
+
+.col-contact-form {
+    width: 100%;
+    text-align: center;
+}
+
+@media all and (min-width: $medium) {
+    .col {
+        width: 50%;
+    }
+
+    .col-info {
+        width: 33.33%;
+    }
+
+    .col-contact-data {
+        width: 40%;
+    }
+    
+    .col-contact-form {
+        width: 60%;
+    }
+}
+
+@media all and (min-width: $large) {
+    .col {
+        width: 25%;
+    }
+}
